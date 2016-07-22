@@ -19,5 +19,4 @@
 //= require masonry/modernizr-transitions
 //= require isotope/jquery.isotope
 //= require bootstrap-sprockets
-//= require turbolinks
 //= require_tree .
