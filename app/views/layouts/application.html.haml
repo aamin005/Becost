@@ -8,5 +8,6 @@
 %body
   - flash.each do |name, msg|
     = content_tag :div, msg, class: "alert alert-info"
-    
+  %p.notice= notice
+  %p.alert= alert
   = yield

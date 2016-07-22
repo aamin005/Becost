@@ -1,7 +1,10 @@
 %h1= @product.title
 %p= @product.description
+%p= number_to_currency @product.price, unit: '฿', format: "%n %u" 
 %p
-  = number_to_currency(@product.price, unit: '฿', format: "%n %u")
+  Submitted by
+  = @product.user.email
+  
   
 
 

@@ -14,6 +14,7 @@ gem 'haml', '~> 4.0.5'
 gem 'devise', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'simple_form', '~> 3.2.1'
+gem 'sprockets', '~> 3.7.0'
 
 group :development, :test do
  
