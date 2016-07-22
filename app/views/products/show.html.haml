@@ -1,6 +1,8 @@
 #pin_show.row
   .col-md-8.col-md-offset-2
     .panel.panel-default
+      .panel-heading.product_image
+        = image_tag @product.image.url(:medium)
       .panel-body
         .row
           .col-md-6
@@ -22,7 +24,10 @@
             Submitted by
             = @product.user.email
           .col-md-6                      
-            .btn-group.pull-right              
+            .btn-group.pull-right  
+              = link_to like_product_path(@product), method: :put, class: "btn btn-default" do
+                %span.glyphicon.glyphicon-heart
+                  = @product.get_upvotes.size                            
               = link_to "Edit", edit_product_path, class: "btn btn-default"
               = link_to "Delete", product_path(@product), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
 
