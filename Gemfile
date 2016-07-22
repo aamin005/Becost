@@ -17,6 +17,7 @@ gem 'simple_form', '~> 3.2.1'
 gem 'sprockets', '~> 3.7.0'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'paperclip', '~> 5.0.0'
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
  

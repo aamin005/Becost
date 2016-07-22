@@ -11,6 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery_ujs
+//= require masonry/masonry.min
+//= require masonry/jquery.event-drag
+//= require masonry/jquery.imagesloaded.min
+//= require masonry/jquery.infinitescroll.min
+//= require masonry/modernizr-transitions
+//= require isotope/jquery.isotope
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .

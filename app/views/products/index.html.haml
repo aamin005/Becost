@@ -1,4 +1,11 @@
-- @products.each do |product|
-  = link_to (image_tag product.image.url(:medium)), product
-  %h2= link_to product.title, product
+#products.transitions-enabled
+  - @products.each do |product|
+    .box.panel.panel-default
+      = link_to (image_tag product.image.url), product
+      .panel-body
+        %h2= link_to product.title, product
+        %h3= number_to_currency product.price, unit: '฿', format: "%n %u"
+        %p.user
+        Submitted by
+        = product.user.email
 

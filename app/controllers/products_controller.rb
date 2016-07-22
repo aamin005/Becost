@@ -39,7 +39,7 @@ class ProductsController < ApplicationController
 	end
 
 	def upvote
-		@product.upvate_by current_user
+		@product.upvote_by current_user
 		redirect_to :back
 	end
 

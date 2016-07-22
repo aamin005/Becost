@@ -1,8 +1,9 @@
 .col-md-6.col-md-offset-3
-  %h1 New Form
+  .row
+    .panel.panel-default
+      .panel-heading        
+        %h1 New Form
+      .panel-body
+        = render 'form'
 
-  = render 'form'
 
-
-
-  = link_to "Back", root_path
